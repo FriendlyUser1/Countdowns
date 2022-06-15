@@ -1,0 +1,66 @@
+html,
+body {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to right, #43cea2, #185a9d);
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#title,
+label,
+h3 {
+	font-weight: bold;
+	color: white;
+}
+
+#custom-form {
+	background: linear-gradient(to right, grey, cornflowerblue);
+	width: 50%;
+	left: 25%;
+	top: 40%;
+	border-radius: 10px;
+	border: 2px solid black;
+	position: absolute;
+	opacity: 0;
+	padding: 10;
+	margin-top: 25px;
+	font-size: 21px;
+	text-align: center;
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	-ms-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+}
+
+#createbtn {
+	border: 1px solid cyan;
+	border-radius: 10px;
+	width: 200px;
+	background: linear-gradient(to right, #ffffcc, #ccffff);
+	color: black;
+	font-weight: bold;
+}
+
+#yearinput,
+#title {
+	text-align: center;
+	color: black;
+}
+
+#yearinput,
+#hourinput,
+#minuteinput,
+#secondinput {
+	width: 70px;
+}

@@ -1,0 +1,115 @@
+<!-- form -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Countdown</title>
+		<link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<link rel="stylesheet" href="../../css/global.css" type="text/css" />
+		<script src="../../js/bootstrap.js"></script>
+		<link rel="icon" href="../../assets/img/favicon.png" />
+		<script src="./app.js"></script>
+	</head>
+	<body onload="init()">
+		<!-- Header -->
+		<br style="height: 2.5% !important" />
+		<div class="container">
+			<header class="d-flex justify-content-center py-3">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="../../" class="nav-link">Home</a></li>
+					<li class="nav-item">
+						<a href="../../christmas/" class="nav-link">Christmas</a>
+					</li>
+					<li class="nav-item">
+						<a href="../../newyear/" class="nav-link">New Year</a>
+					</li>
+					<li class="nav-item">
+						<a href="../../easter/" class="nav-link">Easter</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active" aria-current="page">Custom</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+
+		<div id="custom-form" class="text-center py-lg-5">
+			<br />
+			<h3 id="emsg"></h3>
+			<label for="title"> Title: ​</label>
+			<input type="text" name="title" id="title" />
+			<br />
+			<br />
+			<label for="dayselect">Day: ​</label>
+			<select name="dayselect" id="dayselect">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<br />
+			<br />
+			<label for="monthselect">​ Month: ​</label>
+			<select name="monthselect" id="monthselect">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<br />
+			<br />
+			<label for="yearinput">​ Year: ​</label>
+			<input type="number" name="yearinput" id="yearinput" />
+			<br />
+			<br />
+			<label for="hourinput">​ Hour: ​</label>
+			<input type="number" name="hourinput" id="hourinput" />
+			<label for="minuteinput">​ Minute: ​</label>
+			<input type="number" name="minuteinput" id="minuteinput" />
+			<label for="secondinput">​ Second: ​</label>
+			<input type="number" name="secondinput" id="secondinput" />
+			<br />
+			<br />
+			<input type="button" id="createbtn" value="Create" onclick="create()" />
+			<br />
+		</div>
+	</body>
+</html>
