@@ -33,7 +33,7 @@ function create() {
 		return (document.getElementById("emsg").innerHTML = "Invalid date.");
 	}
 	window.location.replace(
-		`https://friendlyuser1.github.io/Countdowns/countdown/index.html?iso=${date.toISOString()}&msg=${fixedEncodeURIComponent(
+		`https://friendlyuser1.github.io/countdowns/countdown/index.html?iso=${date.toISOString()}&msg=${fixedEncodeURIComponent(
 			title
 		)}`
 	);
